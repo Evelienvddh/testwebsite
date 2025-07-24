@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setting the viewport to make your website look good on all devices-->
+
+<title>EvelienstestHTMLdocument</title>
+
+<style> /* begin CSS gedeelte tot het einde van het style element. Dit is een comment in CSS taal (net zoals SQL). De comment tekens die je gebruikt voor HTML werken hier niet*/ 
+
+body {font-family:comic sans MS, Comic Sans; line-height: 18px}
+h1   {color: brown; text-align: center; font-size:72px}
+h2   {text-align: center; font-size:48px}
+h3   {color: brown; text-align: left; font-size:36px}
+h4   {text-align: left; font-size:28px}
+h5   {text-align: left; font-size:24px}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  line-height: 20px;
+  background-image: url(Afbeeldingen/istockphotoappeltaart.jpg);
+  background-repeat: no-repeat; /* voorkomt dat foto tweemaal naast elkaar getoond wordt*/
+  background-size: cover; /* zorgt ervoor dat foto over de gehele breedte van de header getoond wordt*/
+  background-attachment: fixed; /* zorgt ervoor dat de foto niet uitgerekt wordt(?)*/
+  background-position: bottom; /* toont de onderkant van de foto gezien de foto hoger is dan de vorm van de header*/
+}
+
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell; {dit maakt cellen in een tabel, zodat de section en article even hoog worden}
+}
+
+section {
+  /*float: left;*/ {float werkt niet samen met de col-container}
+  width: 20%;
+  background: peru;
+  padding: 10px;
+
+  box-sizing: border-box; /* dit trekt de padding van de content af in plaats van optellen */
+  li:hover {background-color: wheat}
+  li:hover {color: brown}
+  li{cursor: pointer; /* geeft een handje als cursor*/}
+}
+
+section ul {
+padding-left: 0;}
+
+section ul li {
+    width: 200px;
+    float: none;
+    background-color: brown;
+    color: black;
+    margin: 12px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 8px;
+    /*list-style-type:none;*/
+}
+
+article {
+  /*float: left;*/ {float werkt niet samen met de col-container}
+  width: 80%;
+  height: 100%; 
+  background-color: wheat;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+footer {
+background-color: chocolate;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+  @media screen and (max-width: 600px) {
+  section, article {
+    width: 100%;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+<h1>Welkom</h1>
+<h2>op Evelien's test webpagina</h2>
+</header>
+
+<div class="col-container">
+<section class = "col"> 
+  <ul style="list-style-type:none;">
+    <li><b>Appeltaart</b></li>
+    <li>Pannekoeken</li>
+    <li>Poffertjes</li>
+    <li>Cake</li>
+  </ul>
+</section>
+
+<article class="col">
+<h3> 🍏 Appeltaart recept</h3>
+<p> bron: ChatGPT </p>
+
+  <h4> 🧂 Ingrediënten </h4>
+  <h5> Voor het deeg </h5>
+
+  <ul>
+    <li> 300 g bloem </li>
+    <li>175 g ongezouten roomboter (op kamertemperatuur)</li>
+    <li>150 g kristalsuiker</li>
+    <li>1 ei</li>
+    <li>Snufje zout</li>
+  </ul>
+
+  <h5>Voor de vulling: </h5>
+
+<ul>
+  <li>5 à 6 stevige appels (bijv. Goudreinetten of Elstar)</li>
+  <li>75 g rozijnen (optioneel, geweekt in warm water of rum)</li>
+  <li>50 g kristalsuiker</li>
+  <li>2 tl kaneel</li>
+  <li>1 el citroensap</li>
+  <li>1-2 el paneermeel (om vocht op te nemen)</li>
+</ul>
+
+  <h5>Voor de afwerking:</h5>
+1 ei (losgeklopt, om te bestrijken)
+
+<h4>🧑‍🍳 Bereidingswijze </h4>
+<ol>
+<li><h5>Voorbereiding </h5>
+<ul style="list-style-type:disc;">
+  <li>Verwarm de oven voor op 175°C (boven- en onderwarmte).</li>
+  <li> Vet een springvorm van 24 cm in en bekleed eventueel de bodem met bakpapier.</li>
+</ul>
+<li><h5>Deeg maken</h5>
+<ul style="list-style-type:disc;">
+  <li>Meng bloem, suiker en zout in een kom.</li>
+  <li>Voeg de koude boter toe en wrijf met je vingers tot het op broodkruim lijkt.</li>
+  <li>Voeg het ei toe en kneed snel tot een samenhangend deeg.</li>
+  <li>Verdeel het deeg in drieën: 2/3 voor bodem en zijkant, 1/3 voor de bovenkant. Zet het in de koelkast (15 min).</li>
+</ul>
+<li><h5>Vulling maken</h5>
+<ul style="list-style-type:disc;">
+  <li>Schil de appels, verwijder het klokhuis en snijd in blokjes.</li>
+  <li>Meng met rozijnen, kaneel, suiker en citroensap.</li>
+</ul>
+<li><h5>Taart samenstellen</h5>
+<ul style="list-style-type:disc;">
+  <li>Rol 2/3 van het deeg uit en bekleed de vorm (bodem + zijkanten).</li>
+  <li>Strooi paneermeel over de bodem.</li>
+  <li>Schep de appelvulling erin.</li>
+  <li>Rol de rest van het deeg uit en snijd in repen. Leg deze kruislings over de taart.</li>
+  <li>Bestrijk met losgeklopt ei.</li>
+</ul>
+<li><h5>Bakken</h5>
+<ul style="list-style-type:disc;">
+  <li>Bak de appeltaart in ca. 60 minuten goudbruin en gaar.</li>
+  <li>Laat minimaal 1 uur afkoelen in de vorm, anders valt hij uit elkaar bij het aansnijden.</li>
+</ul>
+</ol>
+<h4> 🧁 Serveer-tip:</h4>
+Lauwwarm met een toef slagroom of een bolletje vanille-ijs is 'ie op z'n best!
+
+
+Wil je ook een snellere of glutenvrije versie? Laat het me weten!
+
+<p><img src="Afbeeldingen/koopmans appeltaart.jpg" alt="Appeltaart afbeelding" width=50% height=50%></p>
+
+</article>
+</div>
+
+<footer>
+<p> deze tekst is gemaakt met google AI: <br>
+A website footer is the section located at the very bottom of a webpage, typically consistent across all pages of a site. 
+It serves as a place for important information and navigation links, including copyright notices, privacy policies, sitemaps, contact information, social media icons, and email sign-up forms. 
+Footers enhance usability and provide a final point of interaction for users who scroll to the bottom of a page. </p>
+</footer>
+
+
+
+</body>
+</html>
